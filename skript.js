@@ -14,6 +14,13 @@ var zoneInfo = "info";
 WA.room.onEnterZone(zoneInfo, () => {
    currentPopup =  WA.ui.openPopup("infoPopup","Willkommen bei \n DB WorkAdventure! \n Erst nach deiner persönlichen Freischaltung kannst du den OpenSpace Bereich sowie andere Umgebungen betreten. \n Alles dazu findest du im Digitalportal!",[
         {
+            label: "Schließen",
+            callback: (popup => {
+                isCoWebSiteOpened = false;
+                closePopUp();
+            })
+        },
+        {
             label: "Digitalportal",
             callback: (popup => {
                 WA.nav.openTab(urlInfo);
