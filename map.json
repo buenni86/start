@@ -24,7 +24,7 @@
                 {
                  "name":"exitUrl",
                  "type":"string",
-                 "value":"https:\/\/play.workadventu.re\/@\/db-systel\/db\/sprechstunde"
+                 "value":"https:\/\/play.workadventu.re\/@\/db-systel\/db\/sprechstunde-db-systel-team-evs"
                 }],
          "type":"tilelayer",
          "visible":true,
