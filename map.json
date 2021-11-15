@@ -254,6 +254,24 @@
                  "width":258.916091999577,
                  "x":366.416821892835,
                  "y":425.811296171528
+                }, 
+                {
+                 "height":27.1429963274149,
+                 "id":14,
+                 "name":"Sprechstunde",
+                 "rotation":0,
+                 "text":
+                    {
+                     "fontfamily":"Press Start 2P",
+                     "pixelsize":8,
+                     "text":"Sprechstunde\nTeam EVS\nxx:00 - xx:00",
+                     "wrap":true
+                    },
+                 "type":"",
+                 "visible":true,
+                 "width":105.132113982245,
+                 "x":563.354467210949,
+                 "y":54.6897573848024
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -274,7 +292,7 @@
          "y":0
         }],
  "nextlayerid":49,
- "nextobjectid":14,
+ "nextobjectid":15,
  "orientation":"orthogonal",
  "properties":[
         {
