@@ -11,6 +11,7 @@ function closePopUp(){
 
 var zoneInfo = "info";
 var zoneSAB = "sab";
+var zonePI = "pi";
 
 WA.room.onEnterZone(zoneInfo, () => {
    currentPopup =  WA.ui.openPopup("infoPopup","Willkommen bei \n DB WorkAdventure! \n Erst nach deiner persönlichen Freischaltung kannst du den OpenSpace Bereich sowie andere Umgebungen betreten. \n Alles dazu findest du im Digitalportal!",[
@@ -41,6 +42,17 @@ WA.room.onLeaveZone(zoneInfo, () =>{
 })
 
 WA.room.onEnterZone(zoneSAB, () => {
+   currentPopup =  WA.ui.openPopup("onlySAB","Zutritt nur für die Einheit SAB!",[
+        {
+            label: "Schließen",
+            callback: (popup => {
+                isCoWebSiteOpened = false;
+                closePopUp();
+            })
+        }]);
+})
+
+WA.room.onEnterZone(zonePI, () => {
    currentPopup =  WA.ui.openPopup("onlySAB","Zutritt nur für die Einheit SAB!",[
         {
             label: "Schließen",
