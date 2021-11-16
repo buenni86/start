@@ -53,7 +53,7 @@ WA.room.onEnterZone(zoneSAB, () => {
 })
 
 WA.room.onEnterZone(zonePI, () => {
-   currentPopup =  WA.ui.openPopup("onlySAB","Zutritt nur für die Einheit SAB!",[
+   currentPopup =  WA.ui.openPopup("onlyPI","Zutritt nur für die Einheit PI!",[
         {
             label: "Schließen",
             callback: (popup => {
