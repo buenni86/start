@@ -19,7 +19,7 @@ WA.room.onEnterZone(zoneInfo, () => {
             label: "Schließen",
             callback: (popup => {
                 isCoWebSiteOpened = false;
-                closePopUp();
+                popup.close();
             })
         },
         {
@@ -27,7 +27,7 @@ WA.room.onEnterZone(zoneInfo, () => {
             callback: (popup => {
                 WA.nav.openTab(urlInfo);
                 isCoWebSiteOpened = true;
-                closePopUp();
+                popup.close();
             })
         }]);
 })
@@ -47,7 +47,7 @@ WA.room.onEnterZone(zoneSAB, () => {
             label: "Schließen",
             callback: (popup => {
                 isCoWebSiteOpened = false;
-                closePopUp();
+                popup.close();
             })
         }]);
 })
@@ -58,7 +58,7 @@ WA.room.onEnterZone(zonePI, () => {
             label: "Schließen",
             callback: (popup => {
                 isCoWebSiteOpened = false;
-                closePopUp();
+                popup.close();
             })
         }]);
 })
