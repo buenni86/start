@@ -33,7 +33,7 @@ WA.room.onEnterZone(zoneInfo, () => {
 })
 
 WA.room.onLeaveZone(zoneInfo, () =>{
-    closePopUp();
+    popup.close();
 
     if (isCoWebSiteOpened) {
         WA.nav.closeCoWebSite();
