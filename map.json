@@ -180,7 +180,7 @@
                 {
                  "name":"exitUrl",
                  "type":"string",
-                 "value":".\/iv-buero"
+                 "value":".\/innovation&ventures-buero"
                 }],
          "type":"tilelayer",
          "visible":true,
