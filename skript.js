@@ -77,7 +77,7 @@ WA.room.onEnterZone(zoneIV, () => {
 })
 
 WA.room.onEnterZone(zoneSBahn_IT, () => {
-   currentPopup =  WA.ui.openPopup("onlySBahn_IT","Zutritt nur für die Einheit S-Bahn IT Applications!",[
+   currentPopup =  WA.ui.openPopup("onlySBahn_IT","Zutritt nur für die Einheit \n S-Bahn IT Applications!",[
         {
             label: "Schließen",
             callback: (popup => {
