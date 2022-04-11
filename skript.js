@@ -13,6 +13,7 @@ var zoneInfo = "info";
 var zoneSAB = "sab";
 var zoneIV = "pi";
 var zonePI = "iv";
+var zoneSBahn_IT = "sbahn_it";
 
 WA.room.onEnterZone(zoneInfo, () => {
    currentPopup =  WA.ui.openPopup("infoPopup","Willkommen bei \n DB WorkAdventure! \n Erst nach deiner persönlichen Freischaltung kannst du den OpenSpace Bereich sowie andere Umgebungen betreten. \n Alles dazu findest du im Digitalportal!",[
@@ -66,6 +67,17 @@ WA.room.onEnterZone(zonePI, () => {
 
 WA.room.onEnterZone(zoneIV, () => {
    currentPopup =  WA.ui.openPopup("onlyIV","Zutritt nur für die Einheit IV!",[
+        {
+            label: "Schließen",
+            callback: (popup => {
+                isCoWebSiteOpened = false;
+                popup.close();
+            })
+        }]);
+})
+
+WA.room.onEnterZone(zoneSBahn_IT, () => {
+   currentPopup =  WA.ui.openPopup("onlySBahn_IT","Zutritt nur für die Einheit S-Bahn IT Applications!",[
         {
             label: "Schließen",
             callback: (popup => {
