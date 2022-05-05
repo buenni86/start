@@ -472,7 +472,7 @@
                 {
                  "name":"exitUrl",
                  "type":"string",
-                 "value":".\/Frankfurt#special_area\/exits\/entry-silberturm"
+                 "value":".\/frankfurt#special_area\/exits\/entry-silberturm"
                 }],
          "type":"tilelayer",
          "visible":true,
