@@ -11,8 +11,6 @@ function closePopUp(){
 
 var zoneInfo = "info";
 var zoneSAB = "sab";
-var zoneIV = "pi";
-var zonePI = "iv";
 var zoneSBahn_IT = "sbahn_it";
 
 WA.room.onEnterZone(zoneInfo, () => {
@@ -45,28 +43,6 @@ WA.room.onLeaveZone(zoneInfo, () =>{
 
 WA.room.onEnterZone(zoneSAB, () => {
    currentPopup =  WA.ui.openPopup("onlySAB","Zutritt nur für die Einheit SAB!",[
-        {
-            label: "Schließen",
-            callback: (popup => {
-                isCoWebSiteOpened = false;
-                popup.close();
-            })
-        }]);
-})
-
-WA.room.onEnterZone(zonePI, () => {
-   currentPopup =  WA.ui.openPopup("onlyPI","Zutritt nur für die Einheit PI!",[
-        {
-            label: "Schließen",
-            callback: (popup => {
-                isCoWebSiteOpened = false;
-                popup.close();
-            })
-        }]);
-})
-
-WA.room.onEnterZone(zoneIV, () => {
-   currentPopup =  WA.ui.openPopup("onlyIV","Zutritt nur für die Einheit IV!",[
         {
             label: "Schließen",
             callback: (popup => {
