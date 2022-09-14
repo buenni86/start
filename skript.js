@@ -54,7 +54,7 @@ WA.room.onEnterZone(zoneSAB, () => {
 })
 
 WA.room.onEnterZone(zoneFoEnt, () => {
-   currentPopup =  WA.ui.openPopup("onlyFoEnt","Zutritt nur für Forscher und Entwickler!",[
+   currentPopup =  WA.ui.openPopup("onlyFoEnt","Zutritt nur für Forscher und Entdecker!",[
         {
             label: "Schließen",
             callback: (popup => {
