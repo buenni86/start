@@ -651,45 +651,6 @@
                  "width":346,
                  "x":323,
                  "y":143
-<<<<<<< HEAD
-                }, 
-                {
-                 "height":29.296875,
-                 "id":22,
-                 "name":"Forscher & Entdecker",
-                 "properties":[
-                        {
-                         "name":"font-family",
-                         "type":"string",
-                         "value":"\"Press Start 2P\""
-                        }],
-                 "rotation":0,
-                 "text":
-                    {
-                     "fontfamily":"Press Start 2P",
-                     "halign":"center",
-                     "pixelsize":8,
-                     "text":"Forscher und Entdecker",
-                     "wrap":true
-                    },
-                 "type":"",
-                 "visible":true,
-                 "width":86.6979166666666,
-                 "x":212.651041666667,
-                 "y":36.85
-                }, 
-                {
-                 "height":80.6666666666663,
-                 "id":23,
-                 "name":"onlyFo_Ent",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":164.666666666667,
-                 "x":296,
-                 "y":5.99999999999996
-=======
->>>>>>> parent of 558f885 (Update)
                 }],
          "opacity":1,
          "type":"objectgroup",
