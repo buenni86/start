@@ -12,6 +12,7 @@ function closePopUp(){
 var zoneInfo = "info";
 var zoneSAB = "sab";
 var zoneSBahn_IT = "sbahn_it";
+var zoneFoEnt = "fo_ent";
 
 WA.room.onEnterZone(zoneInfo, () => {
    currentPopup =  WA.ui.openPopup("infoPopup","Willkommen bei \n DB WorkAdventure! \n Erst nach deiner persönlichen Freischaltung kannst du den OpenSpace Bereich sowie andere Umgebungen betreten. \n Alles dazu findest du im Digitalportal!",[
@@ -54,6 +55,17 @@ WA.room.onEnterZone(zoneSAB, () => {
 
 WA.room.onEnterZone(zoneSBahn_IT, () => {
    currentPopup =  WA.ui.openPopup("onlySBahn_IT","Zutritt nur für die Einheit \n S-Bahn IT Applications!",[
+        {
+            label: "Schließen",
+            callback: (popup => {
+                isCoWebSiteOpened = false;
+                popup.close();
+            })
+        }]);
+})
+
+WA.room.onEnterZone(zoneFoEnt, () => {
+   currentPopup =  WA.ui.openPopup("onlyFo_Ent","Zutritt nur für Forscher und Entdecker!",[
         {
             label: "Schließen",
             callback: (popup => {
