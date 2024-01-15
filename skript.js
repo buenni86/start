@@ -10,7 +10,6 @@ function closePopUp(){
 }
 
 var zoneInfo = "info";
-var zoneSAB = "sab";
 var zoneSBahn_IT = "sbahn_it";
 var zoneFoEnt = "fo_ent";
 
@@ -40,17 +39,6 @@ WA.room.onLeaveZone(zoneInfo, () =>{
         WA.nav.closeCoWebSite();
         isCoWebSiteOpened = false;
     }
-})
-
-WA.room.onEnterZone(zoneSAB, () => {
-   currentPopup =  WA.ui.openPopup("onlySAB","Zutritt nur für die Einheit SAB!",[
-        {
-            label: "Schließen",
-            callback: (popup => {
-                isCoWebSiteOpened = false;
-                popup.close();
-            })
-        }]);
 })
 
 WA.room.onEnterZone(zoneFoEnt, () => {
